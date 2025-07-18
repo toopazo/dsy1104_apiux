@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>EA 1: Ejercicio N°1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script async src="scripts/main.js"></script>
+</head>
+
+<body>
+    <h1>Título del sitio web</h1>
+    <p>Esto es una página web</p>
+    <a href="http://localhost:8082/api/v1/orders"> http://localhost:8082/api/v1/orders </a>
+
+    <p>Instructions for life:</p>
+
+    <ul>
+        <li>Eat</li>
+        <li>Sleep</li>
+        <li>Repeat</li>
+    </ul>
+
+    <h1> Lista de páginas web antiguas </h1>
+    <ul>
+        <li><a href="https://www.vortex.com/">vortex.com</a></li>
+        <li><a href="https://www.tic.com/">tic.com</a></li>
+    </ul>
+
+
+    <div id="api-json"></div> <!-- Add this container for JSON -->
+    <!-- <ul id="items-list"></ul> -->
+    <script>
+        // document.getElementById('api-json').innerHTML = "<li>Hello World</li>";
+        // document.getElementById('api-json').innerHTML = "";
+        fetch('http://localhost:8082/api/v1/orders')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('api-json').innerHTML =
+                    '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            })
+            .catch(error => {
+                document.getElementById('api-json').textContent = 'Error: ' + error;
+            });
+    </script>
+
+</body>
+
+</html>
