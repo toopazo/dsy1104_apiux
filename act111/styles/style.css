@@ -1,0 +1,30 @@
+.done {
+  color: darkseagreen;
+  text-decoration: line-through solid black 2px;
+  background-color: lightskyblue;
+  padding: 5px;
+  /* margin: 15px; */
+}
+* {
+    background-color: lightgray;
+}
+.class2 {
+  color: darkblue;
+  font-size: 1.0em;
+  background-color: lightyellow;
+  /* background: 0px; */
+  border-color: rgb(74, 57, 57);
+  border-style: solid;
+  border-width: 2px;
+  /* padding: 0%; */
+}
+.class1 {
+  color: darkgreen;
+  font-size: 1.2em;
+  background-color: maroon;
+  /* background: 0px; */
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  /* padding: 0%; */
+}

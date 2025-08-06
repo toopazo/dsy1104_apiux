@@ -16,3 +16,14 @@ El código de javascript se ejecuta en el cliente y puede verse en el navegador 
 http://127.0.0.1:8083/
 ```
 <img src="docs/Screenshot from 2025-07-18 15-14-28.png" alt="drawing" width="800"/>
+
+## Hola mundo en JavaScript  
+
+En un archivo ```hello_world.js``` agregar el contenido
+```js
+console.log("Hello, World!");
+```
+Ejecutar con
+```bash
+node hello_world.js
+```

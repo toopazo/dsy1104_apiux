@@ -1,8 +1,8 @@
-const listItems = document.querySelectorAll("li");
-const listItems2 = document.getElementsByClassName("old-websites")[0].childNodes[1].querySelectorAll("li");
+console.log(document.getElementsByClassName("class1"));
+console.log(document.getElementsByClassName("class3"));
 
-console.log(document.getElementsByClassName("big-ul"));
-console.log(document.getElementsByClassName("old-websites"));
+const listItems = document.querySelectorAll("li");
+const listItems2 = document.getElementsByClassName("class3")[0].childNodes[1].querySelectorAll("li");
 
 function toggleDone(e) {
   // console.log(e);
