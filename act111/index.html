@@ -9,7 +9,7 @@
     
     <!-- Que atributo es mejor? async o type="module"? -->
     <!-- <script async src="scripts/main.js"></script> -->
-    <script type="module" src="scripts/main.js"></script>
+    <!-- <script type="module" src="scripts/main.js"></script> -->
 
     <!-- CSS interno -->
     <style type="text/css">
@@ -29,11 +29,11 @@
     <p>Instructions for life:</p>
 
     <div class="class1">
-        <ul>
+        <ol>
             <li>Eat</li>
             <li>Sleep</li>
             <li>Repeat</li>
-        </ul>
+        </ol>
     </div>
 
     <p>Instructions for developers:</p>
@@ -56,11 +56,11 @@
     </div>
 
     <!-- <ul id="items-list"></ul> -->
-    <!-- <div id="api-json"></div> -->
+    <div id="api-json"></div>
     <script>
         // document.getElementById('api-json').innerHTML = "<li>Hello World</li>";
         // document.getElementById('api-json').innerHTML = "";
-        fetch('http://localhost:8082/api/v1/orders')
+        fetch('http://127.0.0.1:8082/api/v1/orders')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('api-json').innerHTML =
