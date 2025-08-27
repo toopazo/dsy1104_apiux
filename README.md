@@ -9,7 +9,7 @@ cd dsy1104_apiux
 ```
 La página web se puede visualizar levatando un servidor.
 ```bash
- jwebserver -d $(pwd) -p 8083
+ jwebserver -d $(pwd) -p 8083 -b 0.0.0.0
 ```
 El código de javascript se ejecuta en el cliente y puede verse en el navegador con la url
 ```bash
