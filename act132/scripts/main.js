@@ -30,6 +30,16 @@ function greet(name) {
   return "Hola " + name + "!";
 }
 
+function calculateHypotenuseWithHypot(sideA, sideB) {
+  return Math.hypot(sideA, sideB);
+}
+
+// Example usage:
+const side1 = 3;
+const side2 = 4;
+const hypotenuse = calculateHypotenuseWithHypot(side1, side2);
+console.log(`The hypotenuse is: ${hypotenuse}`); // Output: The hypotenuse is: 5
+
 let message = greet("Juan"); // Calling the function
 console.log(message); // Output: Hello, Alice!
 
@@ -40,18 +50,18 @@ message = "Hoy es timestamp: "+timestamp;
 document.writeln("<p>" + message + "</p>");
 
 
-// function getData(form) {
-//   var formData = new FormData(form);
+function getData(form) {
+  var formData = new FormData(form);
 
-//   for (var pair of formData.entries()) {
-//     console.log(pair[0] + ": " + pair[1]);
-//   }
+  for (var pair of formData.entries()) {
+    console.log(pair[0] + ": " + pair[1]);
+  }
 
-//   console.log(Object.fromEntries(formData));
-//   console.log(JSON.stringify(Object.fromEntries(formData), null, 4));
-// }
+  console.log(Object.fromEntries(formData));
+  console.log(JSON.stringify(Object.fromEntries(formData), null, 4));
+}
 
-// document.getElementById("myForm").addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   getData(e.target);
-// });
+document.getElementById("myForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  getData(e.target);
+});
