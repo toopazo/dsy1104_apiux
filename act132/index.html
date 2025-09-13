@@ -5,20 +5,29 @@
     <meta charset="utf-8">
     <title>EA 1: Act 1.3.2 Index</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
 </head>
 
 <body>
 
-    <form id="myForm">
-        <label>Name:<input id="name" name="name" value="John Doe"></label>
-        <label>Address:<input id="addr" name="address" value="Street address"></label>
-        <input type="submit" value="Submit">
+    <div id="myForm">
+    <h2>Formulario de Contacto</h2>
+    <form action="http://localhost:8082/api/v1/orders" method="get">
+    <!-- <form> -->
+        <label>Name:<input id="name" name="name"></label>
+        <label>Address:<input id="addr" name="address"></label>
+        <!-- <label>Correo:<input id="correo" name="correo"></label> -->
+        <input type="submit" value="Enviar">
     </form>
-
+    <button onclick="showAlert()">Click Me</button>
+    </div>
 
     <!-- <h1 style="font-family: Arial; font-size: 10px;">Titulo del Sitio</h1>     -->
     <h1>Probando JavaScript</h1>
     <script src="scripts/main.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
 </body>
 
 <!-- <div id="id1">

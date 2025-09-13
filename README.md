@@ -27,3 +27,10 @@ Ejecutar con
 ```bash
 node hello_world.js
 ```
+
+## Aprendiendo a usar React
+React es una libreria de JS que permite editar codigo HTML de manera más automatizada (por medio de funciones).
+
+Un buen recurso para entender esto es el tutorial de Next.js acerca de React: https://nextjs.org/learn/react-foundations/
+
+
