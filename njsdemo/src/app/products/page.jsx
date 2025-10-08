@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
+import Link from 'next/link';
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -53,12 +55,16 @@ function Footer() {
       {/* <Stack direction="horizontal" gap={2}> */}
       <div className="d-flex justify-content-center align-items-center">
         <Badge bg="secondary" style={{ margin: "15px" }}>
-          <Button as="a" variant="primary">
-            About us
-          </Button>
-          <Button as="a" variant="success">
-            Contact us
-          </Button>
+          <Link href="/about">
+            <Button as="a" variant="primary" href="/about">
+              About us
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button as="a" variant="success" href="/contact">
+              Contact us
+            </Button>
+          </Link>
         </Badge>
       </div>
       {/* </Stack> */};

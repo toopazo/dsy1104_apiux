@@ -1,5 +1,6 @@
-import Button from 'react-bootstrap/Button';
 
+import Link from 'next/link';
+import Button from 'react-bootstrap/Button';
 
 function Header({ title }) {
   return <h1>{title ? title : 'Default title'}</h1>;
@@ -8,9 +9,12 @@ function Header({ title }) {
 export default function Home() {
   return (
     <>
-      <Button as="a" variant="primary">
-        Button as link
-      </Button>
+      <Link href="/products">
+        {/* <button>Volver a productos</button> */}
+        <Button as="a" variant="primary" href="/products">
+          Volver a productos
+        </Button>
+      </Link>
       <Header title="Hola pirinola" />
     </>
   );
