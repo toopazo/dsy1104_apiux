@@ -1,14 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
-import Link from 'next/link';
-
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Badge from "react-bootstrap/Badge";
 
-import ClientNavBar from "./client_navbar";
+
 import ClientCard from "./client_card";
 import ClientCount from './client_badge';
 
@@ -16,59 +12,12 @@ import ClientCount from './client_badge';
 
 
 export default function HomePage() {
-  const count = 8;
-  // const [count, setCount] = React.useState(6);
-  // // const [saludo, setSaludo] = React.useState("Hola");
-
-  // function addClick() {
-  //   setCount(count + 1);
-  // }
-  // function subtractClick() {
-  //   if (count > 0) {
-  //     setCount(count - 1);
-  //   } else {
-  //     setCount(0);
-  //   }
-  // }
-
+  const count = 9;
   return (
-    <div className="HomePage">
-      <ClientNavBar />
-      {/* <div className="d-flex justify-content-center align-items-center">
-        <Badge variant="dark" style={{ margin: "15px" }}>
-          <button onClick={subtractClick}> - </button>
-          <b> Mostrando {count} producto(s) </b>
-          <button onClick={addClick}> + </button>
-        </Badge>
-      </div> */}
-      <ClientCount />
+    <div className="HomePage" style={{ margin: "20px" }}>
+      {/* <ClientCount /> */}
       <Products likes={count} />
-      <Footer />
     </div>
-  );
-}
-
-function Footer() {
-  return (
-    <>
-      {/* <h1>Soy el componente Footer</h1>; */}
-      {/* <Stack direction="horizontal" gap={2}> */}
-      <div className="d-flex justify-content-center align-items-center">
-        <Badge bg="secondary" style={{ margin: "15px" }}>
-          <Link href="/about">
-            <Button as="a" variant="primary" href="/about">
-              About us
-            </Button>
-          </Link>
-          <Link href="/contact">
-            <Button as="a" variant="success" href="/contact">
-              Contact us
-            </Button>
-          </Link>
-        </Badge>
-      </div>
-      {/* </Stack> */};
-    </>
   );
 }
 
@@ -76,7 +25,7 @@ function Product(props) {
   const prodid = props.prodid;
   return (
     <>
-      <h3>Producto {prodid} </h3>
+      <h3>Destino {prodid} </h3>
       <ClientCard id={prodid} />
     </>
   );

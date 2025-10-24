@@ -8,7 +8,7 @@ export default function ClientCard(props) {
   const iid = 10 + id;
   const isrc = "https://picsum.photos/id/" + iid + "/200/200";
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem" }} data-testid={`client-card-${id}`}>
       <Card.Img variant="top" src={isrc} />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>

@@ -6,7 +6,7 @@ import Badge from "react-bootstrap/Badge";
 
 
 export default function ClientCount() {
-    const [count, setCount] = React.useState(0);    
+    const [count, setCount] = React.useState(0);
     // const [saludo, setSaludo] = React.useState("Hola");
 
     function addClick() {
